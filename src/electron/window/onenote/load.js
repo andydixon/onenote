@@ -60,7 +60,7 @@ global.p3x = {
 }
 
 
-document.title = `${global.p3x.onenote.lang.title} v${global.p3x.onenote.pkg.version}`;
+document.title = `${global.p3x.onenote.lang.title}`;
 
 
 //require('./core/overlay')

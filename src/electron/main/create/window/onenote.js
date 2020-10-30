@@ -6,7 +6,7 @@ function createWindow() {
 
     global.p3x.onenote.window.onenote = new BrowserWindow({
         icon: global.p3x.onenote.iconFile,
-        title: `${global.p3x.onenote.title} v${global.p3x.onenote.pkg.version}`,
+        title: `${global.p3x.onenote.title}`,
         backgroundColor: 'black',
         autoHideMenuBar: true,
         webPreferences: {

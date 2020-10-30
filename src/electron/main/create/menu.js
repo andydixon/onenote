@@ -198,56 +198,7 @@ function mainMenu() {
                 }
             ]
         },
-        {
-            label: global.p3x.onenote.lang.menu.help.title,
-            role: 'help',
-            submenu: [
-                {
-                    label: global.p3x.onenote.lang.label.download,
-                    click: action.download
-                },
-                {
-                    label: 'GitHub',
-                    click: action.github
-                },
-                {
-                    label: global.p3x.onenote.lang.label.developer,
-                    click: action.patrik
-                },
-                {
-                    label: 'P3X',
-                    click: action.p3x
-                },
-                {
-                    label: 'Corifeus',
-                    click: action.corifeus
-                },
-                {
-                    label: 'NPM',
-                    click: action.npm
-                },
-            ]
-        },
-        {
-            label: global.p3x.onenote.lang.label.donate,
-            click: () => {
-                shell.openExternal('https://paypal.me/patrikx3')
-            }
-        },
     ]
-
-    if (process.env.APPIMAGE !== undefined) {
-        template[6].submenu.push({type: 'separator'})
-        template[6].submenu.push({
-                label: global.p3x.onenote.lang.menu.help.checkUpdates,
-                click: () => {
-                    const {autoUpdater} = require("electron-updater");
-                    autoUpdater.checkForUpdatesAndNotify();
-                }
-            },
-        )
-    }
-
 
     const menu = Menu.buildFromTemplate(template)
     Menu.setApplicationMenu(menu)
