@@ -4,6 +4,7 @@ const conf = new configstore(pkg.name);
 
 const {app} = require('electron');
 app.allowRendererProcessReuse = true
+console.log(conf);
 
 let translationKey = conf.get('lang')
 if (translationKey === undefined) {

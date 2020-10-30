@@ -49,7 +49,7 @@ body * {
     left: 0px;
     overflow: hidden;
     width: 100%;
-    height: calc(100% - var(--p3x-onenote-bottom-bar-height));
+    height: 100vh;
 }
 
 .md-toast-content {
